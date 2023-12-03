@@ -1,3 +1,3 @@
-export const TITLE = 'Core Template';
-export const DESCRIPTION = 'Website Description';
-export const META_DIR = '/favicon'
+export const TITLE = 'Bon Appetit';
+export const DESCRIPTION = 'Delicious cakes! order now.';
+export const META_DIR = ''

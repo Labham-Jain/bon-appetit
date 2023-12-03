@@ -10,7 +10,9 @@
       "@meta/*": ["./src/meta/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@pages/*": ["./src/pages/*"],
-      "@utilities/*": ["./src/utilities/*"]
+      "@utilities/*": ["./src/utilities/*"],
+      "@icons/*": ["./src/icons/*"],
+      "@styles/*": ["./src/styles/*"]
     }
   }
 }

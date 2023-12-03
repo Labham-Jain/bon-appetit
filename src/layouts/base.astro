@@ -1,7 +1,13 @@
 ---
+import '@styles/index.css';
+import Navigation from '@components/Navigation';
 import { DESCRIPTION, TITLE, META_DIR } from '@meta/base';
 
-const {title = TITLE, description = DESCRIPTION} = Astro.props as Record<string, string>;
+const {title = TITLE, description = DESCRIPTION, navbar = true} = Astro.props as {
+  title?: string;
+  description?: string;
+  navbar?: boolean;
+};
 
 ---
 
@@ -10,6 +16,7 @@ const {title = TITLE, description = DESCRIPTION} = Astro.props as Record<string,
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   {description ? <meta name="description" content={description}/> : null}
 
   {META_DIR ? (
@@ -27,6 +34,7 @@ const {title = TITLE, description = DESCRIPTION} = Astro.props as Record<string,
 
 </head>
 <body>
+  {navbar ? <Navigation /> : null}
   <slot />
 </body>
 </html>
